@@ -1,0 +1,25 @@
+[user]
+    name = Tao Li
+    email = litao.buptsse@gmail.com
+[core]
+    editor = vim
+    autocrlf = input
+[credential]
+    helper = osxkeychain
+[color]
+    status = auto
+    branch = auto
+    interactive = auto
+    diff = auto
+[difftool "sourcetree"]
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path =
+[mergetool "sourcetree"]
+    trustExitCode = true
+[alias]
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[filter "media"]
+    clean = git-media-clean %f
+    smudge = git-media-smudge %f
+[push]
+    default = matching
